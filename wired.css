@@ -86,9 +86,43 @@
     display: flex;
 }
 .todaysPick{
-    width: 70%;
+    width: 76%;
     border-right: 1px solid gray;
+    border: 1px solid blue;
+
 }
+.todaysPick>div{
+    width: 98%;
+    border-top: 2px solid black;
+}
+.todaysPick>div>h3{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 16%;
+    font-size: 14px;
+}
+.mostRecent {
+    width: 24%;
+    border: 1px solid blue;
+}
+.mostRecent>div{
+    width: 95%;
+    border-top: 2px solid black;
+    margin-left: 5%;
+    
+}
+.mostRecent>div>h3{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 45%;
+    font-size: 14px;
+}
+
+
 
 
 
@@ -103,9 +137,11 @@
     .navBar > div:nth-child(1) > div:nth-child(2) {
       display: none;
     }
-    .navBar > div:nth-child(2) {
-      font-size: 12px;
-      width: 25%;
+    .navBar > div:nth-child(2)> p {
+        display: none;
+    }
+    .navBar > div:nth-child(2)> i {
+        display: none;
     }
   }
   @media screen and (max-width: 1020px) {
