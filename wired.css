@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.main {
+  height: 2000px;
+}
+.navBar {
+  display: flex;
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid rgb(203, 203, 203);
+  background-color: white;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+/* .navBar div {
+  border: 2px solid gray;
+} */
+.navBar > div:nth-child(1) {
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBar > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: 25%;
+  justify-content: space-around;
+}
+.navBar > div:nth-child(1) div:nth-child(1) i {
+  font-size: 18px;
+}
+.navBar > div:nth-child(1) div:nth-child(1) img {
+  width: 68%;
+}
+.navBar > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  width: 72%;
+}
+.navBar > div:nth-child(1) > div:nth-child(2) > p:nth-child(8) {
+  display: none;
+}
+.navBar > div:nth-child(2) {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+.navBar > div:nth-child(2) p {
+  border-right: 2px solid rgb(165, 165, 165);
+  padding-right: 20px;
+}
+.navBar > div:nth-child(2) button {
+  background-color: rgb(89, 89, 174);
+  color: white;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.news {
+    border: 2px solid red;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    margin-top: 7%;
+    display: flex;
+}
+.todaysPick{
+    width: 70%;
+    border-right: 1px solid gray;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+    .navBar > div:nth-child(1) > div:nth-child(2) {
+      display: none;
+    }
+    .navBar > div:nth-child(2) {
+      font-size: 12px;
+      width: 25%;
+    }
+  }
+  @media screen and (max-width: 1020px) {
+    .navBar > div:nth-child(1) > div:nth-child(2) > p:nth-child(6){
+        display: none;
+    }
+    .navBar > div:nth-child(1) > div:nth-child(2) > p:nth-child(7){
+        display: none;
+    }
+    .navBar > div:nth-child(1) > div:nth-child(2) > p:nth-child(8) {
+      display: block;
+    }
+    .navBar > div:nth-child(1) > div:nth-child(2) {
+      font-size: 12px;
+    }
+    .navBar > div:nth-child(2) {
+        font-size: 12px;
+        width: 20%;
+      }
+  }
+  
