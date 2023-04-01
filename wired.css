@@ -78,8 +78,8 @@
 }
 
 .news {
-    border: 2px solid red;
-    height: 500px;
+    /* border: 2px solid red; */
+    /* height: 1500px; */
     width: 90%;
     margin: auto;
     margin-top: 7%;
@@ -88,12 +88,14 @@
 .todaysPick{
     width: 76%;
     border-right: 1px solid gray;
-    border: 1px solid blue;
-
+    /* border: 1px solid blue; */
 }
-.todaysPick>div{
+.todaysPick>div:nth-child(1){
     width: 98%;
     border-top: 2px solid black;
+}
+.todaysPick>div:nth-child(2){
+    width: 98%;
 }
 .todaysPick>div>h3{
     font-family: 'Courier New', Courier, monospace;
@@ -103,9 +105,60 @@
     width: 16%;
     font-size: 14px;
 }
+.todaysPick>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid gold; */
+    margin-top: 20px;
+}
+/* .todaysPick>div:nth-child(2)>div {
+    height: 600px;
+} */
+.todaysPick>div:nth-child(2)>div:nth-child(1){
+    width: 32%;
+}
+.todaysPick>div:nth-child(2)>div:nth-child(1)>div{
+    /* border: 1px solid maroon; */
+    height: 300px;
+}
+.todaysPick>div:nth-child(2)>div:nth-child(1)>div:nth-child(1){
+    border-bottom: 1px solid rgb(134, 144, 154);
+    margin-bottom: 20px;
+}
+.todaysPick2>img{
+    width: 100%;   
+}
+.todaysPick2>p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.todaysPick2>h4 {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.todaysPick>div:nth-child(2)>div:nth-child(2)>h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+.todaysPick>div:nth-child(2)>div:nth-child(2)>h5{
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+.todaysPick>div:nth-child(2)>div:nth-child(2){
+    width: 65%;
+}
+
+
 .mostRecent {
     width: 24%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 .mostRecent>div{
     width: 95%;
@@ -120,6 +173,45 @@
     padding: 10px;
     width: 45%;
     font-size: 14px;
+}
+.mostRecent>div:nth-child(1)>:nth-child(2){
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    height: 500px;
+}
+.mostRecent>div:nth-child(1)>:nth-child(2)>div {
+    /* border: 1px solid black; */
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgb(193, 193, 193);
+}
+.mostRecent>div:nth-child(1)>:nth-child(2)>div:nth-child(5){
+    border: none;
+    height: 120px;
+}
+
+.mostRecent>div:nth-child(1)>:nth-child(2)>div>div:nth-child(1){
+    width: 58%;
+}
+.mostRecent>div:nth-child(1)>:nth-child(2)>div>div:nth-child(2){
+    width: 30%;
+    /* border: 2px solid gray; */
+}
+.mostRecent>div:nth-child(1)>:nth-child(2)>div>div:nth-child(1)>h5 {
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mostRecent>div:nth-child(1)>:nth-child(2)>div>div:nth-child(1)>p {
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 5%;
+}
+.mostRecent>div:nth-child(1)>:nth-child(2)>div>div:nth-child(2)>img {
+    width: 100%;
 }
 
 
@@ -161,5 +253,54 @@
         font-size: 12px;
         width: 20%;
       }
+    .news {
+        flex-direction: column;
+    }  
+    .todaysPick{
+        width: 95%;
+        margin: auto;
+        margin-top: 20px;
+        border: none;
+    }
+    .todaysPick>div>h3{
+        width: 18%;
+    }
+    .todaysPick>div:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .todaysPick>div:nth-child(2)>div:nth-child(1){
+        width: 100%;
+        margin: auto;
+        border: 2px solid red;
+    }
+    .todaysPick>div:nth-child(2)>div:nth-child(1){
+        width: 100%;
+        margin: auto;
+        border: 2px solid red;
+    }
+    .mostRecent {
+        width: 95%;
+        margin: auto;
+        margin-left: -2%;
+        margin-top: 2%;
+    }
+    .mostRecent>div{
+        width: 100%;
+    }
+    .mostRecent>div>h3{
+        width: 17%;
+    }
+    .mostRecent>div:nth-child(1)>:nth-child(2){
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 350px;
+    }
+    .mostRecent>div:nth-child(1)>:nth-child(2)>div{
+        width: 48%;
+    }
+    .mostRecent>div:nth-child(1)>:nth-child(2)>div>div:nth-child(2){
+        display: none;
+    }
   }
   
