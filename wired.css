@@ -268,16 +268,7 @@
     .todaysPick>div:nth-child(2){
         flex-direction: column-reverse;
     }
-    .todaysPick>div:nth-child(2)>div:nth-child(1){
-        width: 100%;
-        margin: auto;
-        border: 2px solid red;
-    }
-    .todaysPick>div:nth-child(2)>div:nth-child(1){
-        width: 100%;
-        margin: auto;
-        border: 2px solid red;
-    }
+
     .mostRecent {
         width: 95%;
         margin: auto;
