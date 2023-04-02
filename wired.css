@@ -262,6 +262,54 @@
   font-weight: 200;
 }
 
+/* *************WIRED30*********** */
+
+.wired30 {
+  width: 90%;
+  margin: auto;
+  border-top: 2px solid black;
+  margin-top: 5%;
+}
+.wired30 > span:nth-child(1) {
+  display: flex;
+}
+.wired30 > span:nth-child(1) > h3 {
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+.wired30Main{
+  display: flex;
+  justify-content: space-between;
+}
+.wired30Main>div {
+  border: 2px solid black;
+  margin-top: 2%;
+}
+.wired30Main>div:nth-child(1){
+  width: 65%;
+}
+.wired30Main>div:nth-child(2){
+  width: 32%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1020px) {
   .navBar > div:nth-child(1) > div:nth-child(2) > p:nth-child(6) {
     display: none;
@@ -378,15 +426,13 @@
   }
   .topTrending > div > div:nth-child(1) {
     width: 15%;
-    /* height: 15%; */
-    /* border: 1px solid red; */
     overflow: hidden;
   }
   .topTrending > div > div:nth-child(1) > img {
-    /* height: 100%; */
-    /* width: 100%; */
-    /* display: none; */
     scale: 1.9;
     margin-top: 20%;
+  }
+  .topTrending > div > div:nth-child(2) {
+    width: 80%;
   }
 }
