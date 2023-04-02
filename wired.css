@@ -16,6 +16,7 @@
   justify-content: space-between;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 /* .navBar div {
   border: 2px solid gray;
@@ -237,7 +238,7 @@
   justify-content: space-between;
 }
 .topTrending > div {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-top: 1%;
   width: 23%;
 }
@@ -378,11 +379,14 @@
   .topTrending > div > div:nth-child(1) {
     width: 15%;
     /* height: 15%; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    overflow: hidden;
   }
   .topTrending > div > div:nth-child(1) > img {
     /* height: 100%; */
-    width: 100%;
+    /* width: 100%; */
     /* display: none; */
+    scale: 1.9;
+    margin-top: 20%;
   }
 }
